@@ -329,7 +329,7 @@ def get_weather_forecast(*args: tuple):
 
     try:
         # использование API-ключа, помещённого в .env-файл по примеру WEATHER_API_KEY = "01234abcd....."
-        weather_api_key = os.getenv("28dfae694d8c997ee8baf63515e4ddcd")
+        weather_api_key = os.getenv("WEATHER_API_KEY")
         open_weather_map = OWM(weather_api_key)
 
         # запрос данных о текущем состоянии погоды
